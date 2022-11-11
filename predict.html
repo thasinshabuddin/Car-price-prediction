@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+		/>
+		<title>Prediction</title>
+	</head>
+	<body>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://bulma.io">
+					<img
+						src="https://www.kindpng.com/picc/m/140-1404603_sports-car-logo-car-logo-png-vector-transparent.png"
+						width="112"
+						height="28"
+					/>
+				</a>
+
+				<a
+					role="button"
+					class="navbar-burger"
+					aria-label="menu"
+					aria-expanded="false"
+					data-target="navbarBasicExample"
+				>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+					<a href="index.html" class="navbar-item"> Home </a>
+					<a href="predict.html" class="navbar-item"> Predict Price </a>
+					<a class="navbar-item"> </a>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> More </a>
+
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> About </a>
+							<a class="navbar-item"> Contact </a>
+							<hr class="navbar-divider" />
+							<a class="navbar-item"> Report an issue </a>
+						</div>
+					</div>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button is-primary">
+								<strong>Sign up</strong>
+							</a>
+							<a class="button is-light"> Log in </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div>
+			<div class="field">
+				<label class="label">Car Name</label>
+				<div class="control">
+					<input
+						class="input"
+						type="text"
+						placeholder="Enter car brand name here"
+					/>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">year</label>
+				<div class="control has-icons-left has-icons-right">
+					<input
+						class="input is-success"
+						type="number"
+						placeholder="year"
+						value="bulma"
+					/>
+					<span class="icon is-small is-left">
+						<i class="fas fa-user"></i>
+					</span>
+					<span class="icon is-small is-right">
+						<i class="fas fa-check"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Present price</label>
+				<div class="control has-icons-left has-icons-right">
+					<input
+						class="input is-danger"
+						type="number"
+						placeholder="Current price of car"
+						min="0"
+					/>
+					<span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					</span>
+					<span class="icon is-small is-right">
+						<i class="fas fa-exclamation-triangle"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Selling price</label>
+				<div class="control has-icons-left has-icons-right">
+					<input
+						class="input is-danger"
+						type="number"
+						placeholder="Selling price of car"
+						min="0"
+					/>
+					<span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					</span>
+					<span class="icon is-small is-right">
+						<i class="fas fa-exclamation-triangle"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">kms Driven</label>
+				<div class="control has-icons-left has-icons-right">
+					<input
+						class="input is-danger"
+						type="number"
+						placeholder="KM driven in car lifetime"
+						min="0"
+					/>
+					<span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					</span>
+					<span class="icon is-small is-right">
+						<i class="fas fa-exclamation-triangle"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Fuel type</label>
+				<div class="control">
+					<input class="input" type="text" placeholder="Fuel type" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Seller type</label>
+				<div class="control">
+					<input class="input" type="text" placeholder="Seller type" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Transmission</label>
+				<div class="control">
+					<div class="select">
+						<select>
+							<option>Automatic</option>
+							<option>manual</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="field">
+				<div class="control">
+					<label class="checkbox">
+						<input type="checkbox" />
+						I agree to the <a href="#">terms and conditions</a>
+					</label>
+				</div>
+			</div>
+
+			<div class="field is-grouped">
+				<div class="control">
+					<a href="result.html"
+						><button class="button is-link">Submit</button></a
+					>
+				</div>
+				<div class="control">
+					<button class="button is-link is-light">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Car Price Prediction</strong> by
+					<a href="#">UIU Team Dynamic</a>. The source code is licensed
+					<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+					website content is licensed
+					<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+						>CC BY NC SA 4.0</a
+					>.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
